@@ -1,0 +1,11 @@
+//define a class
+  //blue print for an object
+  //inside a class we define properties and methods for the objects
+  //user defined data type like {for employee we can create empid,empname}
+
+//then create an object - instance of a class
+  //all the properties and methods defined inside a class onjects
+
+
+IN JAVASCRIPT
+//class like features,is made avalibale via functions

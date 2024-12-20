@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Guess Game</title>
+        <body>
+
+            <script>
+                const name =prompt('enter your name')
+                console.log('welcome' + name)
+                
+                const targetnumber = Math.round(Math.random() * 100);
+                console.log(targetnumber);
+                
+                const maxGuess = 3 
+                let playerGuess = 0
+
+                //initalization , conditon ,inc or dec
+
+               while(playerGuess < maxGuess)
+               {
+                   const guess = parseInt(prompt('guess my number'))
+                   if(guess > targetnumber)
+                   {
+                       console.log('oops!!! your guess was high')
+                   }
+                   else if(guess < targetnumber)
+                   {
+                       console.log('oops!!! your guess was low')
+                   }
+                   else if( guess == targetnumber)
+                   {
+                       console.log('good job'+name +'you guessed')
+
+                       //loop control
+                       break;
+                   }
+
+                   playerGuess ++;
+               }
+
+               if(playerGuess == maxGuess)
+               {
+                   console.log('sorry , you didn\'t get my number ' + targetnumber)
+               }
+
+                // dont use n or small no
+                // targetNumber - camecase
+                // TargetNumber - pascal 
+                // targetnumber -sbnake 
+                // target-number - kebab
+
+                //web scockets for https://code-share.dctacademy.com/agendas/5e6c65d94321ae0017c051e9
+            </script>
+        </body>
+    </head>
+</html>
